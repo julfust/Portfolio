@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site CV</title>
+    <link rel="stylesheet" href="../../asset/css/divers.css">
+</head>
+<body>
+    <div id="main-container">
+        <nav>
+            <a href="../../index.html">Accueil</a>
+            <a href="../../projet.html">Projet</a>
+            <a href="../../profil.html">Profil</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+
+    <div id="middle-container">
+        <section id="carousel">
+            <canvas class="canvas" id="canvas-carousel">
+                Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+            </canvas>
+            <div id="carousel-slideshow-container">
+                <div class="mySlides fade">
+                    <h2 class="item-title">Web GL</h2>
+                    <div id="item-1"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <h2 class="item-title">React</h2>
+                    <div id="item-2"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <h2 class="item-title">Firebase</h2>
+                    <div id="item-3"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div id="description-carousel-selector">
+                <p id="description-1">La découverte de Web GL m'a permis d'implanter la 3D dynamique au 
+                sein de nos pages et ainsi d'approfondir nos compétences en développement front-end en 
+                réalisant des projets plus complexes comme par exemple des jeux vidéo.</p>
+
+                <p id="description-2" style="display: none;">L'utilisation de React m'a permis de me confronter pour la premiere 
+                fois à l'utilisation des outils de développement coter client (type: angular, vue.js) et la 
+                logique du modele MVC utile pour facilité le développement front d'application web monopage.</p>
+
+                <p id="description-3" style="display: none;">Apprendre Firebase m'a permis de découvrir la programmation coter 
+                serveur avec l'utilisation des bases de données. J'ai ainsi put découvrir entre autre le stockage 
+                et l'affichage des données sur un site depuis une database.</p>
+            </div>
+
+            <div id="project-carousel-selector" style="text-align:center">
+                <div class="carousel-selector-item-container" id="container-1">
+                    <div class="carousel-selector-item" id="project-1"></div>
+                    <div class="carousel-selector-item" id="project-2"></div>
+                    <div class="carousel-selector-item" id="project-3"></div>
+                    <div class="carousel-selector-item" id="project-4"></div>
+                </div>
+
+                <div class="carousel-selector-item-container" id="container-2">
+                    <div class="carousel-selector-item" id="project-5"></div>
+                    <div class="carousel-selector-item" id="project-6"></div>
+                    <div class="carousel-selector-item" id="project-7"></div>
+                    <div class="carousel-selector-item" id="project-8"></div>
+                </div>
+
+                <div class="carousel-selector-item-container" id="container-3">
+                    <div class="carousel-selector-item" id="project-9"></div>
+                    <div class="carousel-selector-item" id="project-10"></div>
+                    <div class="carousel-selector-item" id="project-11"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="../../asset/lib/jquery-3.4.1.min.js"></script>
+    <script src="../../asset/lib/all.min.js"></script>
+    <script src="../../asset/js/divers.js"></script>
+</body>
+</html>

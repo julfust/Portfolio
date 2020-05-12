@@ -1,0 +1,210 @@
+/* Inclusion des polices et définition des animations */
+@font-face{
+    font-family: 'PT_Sans';
+    src: url('../Police/PT_Sans/PTSans-Italic.ttf');
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('../Police/Roboto/Roboto-Regular.ttf');
+}
+
+@keyframes slidein{
+    from {
+      margin-left: 100%; 
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+
+/* Modification du style des différents éléments */
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+/* Partie 1: Modification du style de la nav barre */
+nav{
+    height: 70px;
+    background-color: #2274A5;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    font-family: 'PT_Sans';
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px black;
+
+    width: 10%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    overflow: hidden; /*Utilisé pour éviter les bugs d'éffichages dut à l'animation */
+}
+
+nav a:hover{
+    font-size: 1.7em;
+    color: #C41E3D;
+}
+
+/* Modification de largeur des liens afin d'éviter des bugs d'affichage des ombres */ 
+nav a:nth-child(1){
+    animation: slidein 3s;
+}
+
+nav a:nth-child(3){
+    width: 14%;
+}
+
+#title-container{
+    width: 20%;
+
+    margin-top: 3%;
+    margin-left: 10%;
+
+    padding-left: 2%;
+
+    color: rgb(255, 255, 255);
+
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 6px solid rgb(34, 116, 165);
+}
+
+.work-item{
+    height: 210px;
+    width: 30%;
+
+    border: 1px solid black;
+
+    position: relative;
+}
+
+.first-container{
+    margin-bottom: 15%;
+    margin-left: 58%;
+}
+
+h3[id*="item-title"]{
+    position: absolute;
+}
+
+#item-title-1{
+    left: 33%;
+    top: -26%;
+}
+
+#item-title-2{
+    left: 44%;
+    top: -26%;
+}
+
+#item-title-3{
+    left: 30%;
+    top: -26%;
+}
+#item-title-4{
+    left: 35%;
+    top: -26%;
+}
+#item-title-5{
+    left: 44%;
+    top: -26%;
+}
+
+.work-item-number{
+    z-index: 1;
+
+    position: absolute;
+    top: -29px;
+    left: 15px;
+
+    height: 45px;
+    width: 15%;
+
+    text-align: center;
+    padding-top: 3%;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 4px solid black;
+}
+
+.item-container{
+    z-index: 0;
+    overflow: hidden;
+}
+
+.item-container + p{
+    text-align: center;
+}
+
+div[id*=item]
+{
+    height: 210px;
+}
+
+#item-1{
+    background-image: url('../img/Webp.net-resizeimage\ \(2\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item-2{
+    background-image: url('../img/Screenshot_4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#item-3{
+    background-image: url('../img/Screenshot_8.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#item-1:hover, #item-2:hover, #item-3:hover, #item-4:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition-duration: 3s;
+}
+
+#item-4{
+    background-image: url('../img/Screenshot_9.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#item-5{
+    background-image: url('../img/Webp.net-resizeimage\ \(5\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5EEDC;
+}
+
+#item-5:hover{
+    background-image: url('../img/folder-animated-gif-3.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.work-container{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-container > .work-item:nth-child(2){
+    margin-right: 2.5%;
+}
