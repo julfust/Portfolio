@@ -1,7 +1,7 @@
 /* Inclusion des polices et définition des animations */
 @font-face{
-    font-family: 'PT_Sans';
-    src: url('../Police/PT_Sans/PTSans-Italic.ttf');
+    font-family: 'Gudea';
+    src: url('../Police/Gudea/Gudea-Regular.ttf');
 }
 
 @font-face{
@@ -13,6 +13,12 @@
     font-family: 'pixelmix';
     src: url('../Police/pixelmix/pixelmix.ttf')
 }
+
+@font-face{
+    font-family: 'PT_Sans';
+    src: url('../Police/PT_Sans/PTSans-Italic.ttf');
+}
+
 
 @keyframes slidein1{
     from {
@@ -34,13 +40,23 @@
     }
 }
 
-@keyframes fadein{
+@keyframes fadeIn{
     from {
       opacity: 0; 
     }
   
     to {
       opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from {
+      opacity: 1; 
+    }
+  
+    to {
+      opacity: 0;
     }
 }
 
@@ -72,7 +88,7 @@ nav{
 }
 
 nav a{
-    font-family: 'PT_Sans';
+    font-family: 'Gudea';
     font-size: 1.5em;
     color: white;
     text-decoration: none;
@@ -162,7 +178,15 @@ ul > li:nth-child(8){
     overflow: hidden;
 }
 
-h1, h3{
+h3, h4{
+    margin-left: 10%;
+
+    font-family: 'Roboto';
+    font-size: 1.8em;
+    color: #2274A5;
+}
+
+.history-item > h4{
     margin-left: 10%;
 
     font-family: 'PT_Sans';
@@ -176,16 +200,16 @@ h1, h3{
     margin: auto;
 }
 
-#date-title-container > h3{
+#date-title-container > h4{
     margin-top: 0%;
     margin-bottom: 3%;
 }
 
-#date-title-container > h3:nth-child(1){
+#date-title-container > h4:nth-child(1){
     margin-left: 4%;
 }
 
-#date-title-container > h3:nth-child(2){
+#date-title-container > h4:nth-child(2){
     margin-right: 4%;
 }
 
@@ -223,7 +247,7 @@ h1, h3{
     display: flex;
 }
 
-#date-chronologie-container > h3{
+#date-chronologie-container > h4{
     margin-bottom: -2%;
     margin-right: 17%;
 
@@ -232,7 +256,7 @@ h1, h3{
     color: #FF4422;
 }
 
-#date-chronologie-container > h3:nth-child(1){
+#date-chronologie-container > h4:nth-child(1){
     margin-left: 6%;
 }
 
@@ -253,34 +277,32 @@ h1, h3{
 }
 
 .history-item:nth-child(2){
-    margin-top: -5%;
-    margin-left: 8%;
+    margin-top: -2%;
+    margin-left: 23.5%;
 }
 
 .history-item:nth-child(3){
     margin-top: -2%;
+    margin-left: 2%;
 }
 
-.history-item:nth-child(4){
-    margin-top: -5%;
-    margin-left: 1%;
-}
 .history-item > h3{
     margin-left: 0%;
 }
 
-.history-item > h3:nth-child(1){
+.history-item > h4:nth-child(1){
     margin-top: 0%;
     margin-bottom: -10%;
     color: #FF4422;
 }
 
-.history-item > h3{
+.history-item > h4{
     font-size: 1.2em;
 }
 
 .history-item > p{
     margin-top: -5%;
+    margin-left: 13%;
     font-size: 0.8em;
 }
 
@@ -310,23 +332,73 @@ h1, h3{
     transition-timing-function: ease;
 }
 
-.bottom-section-img:hover{
-    transform: translateY(-20px)
+.bottom-section-img > img:hover{
+    transform: translateY(-30px);
+    transition-duration: 1s;
 }
 
-.bottom-section-img > h3{
+.bottom-section-img > h4{
     font-size: 1.3em;
     font-family: 'pixelmix';
 }
 
-#bottom-section-img-container > .bottom-section-img:nth-child(1) > h3{
+#bottom-section-img-container > .bottom-section-img:nth-child(1) > h4{
     margin-right: 17%;
 }
 
-#bottom-section-img-container > .bottom-section-img:nth-child(2) > h3{
+#bottom-section-img-container > .bottom-section-img:nth-child(2) > h4{
     margin-right: 11%;
 }
 
-#bottom-section-img-container > .bottom-section-img:nth-child(3) > h3{
+#bottom-section-img-container > .bottom-section-img:nth-child(3) > h4{
     margin-right: 9%;
+}
+
+#text-container-1, #text-container-2, #text-container-3{
+    position: relative;
+
+    width: 90%;
+    padding: 3%;
+
+    display: none;
+    opacity: 0;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 6px solid #2274A5;
+    border-radius: 10px;
+}
+
+.close-logo{
+    position: absolute;
+    left: 96%;
+    top: -11%;
+
+    border-radius: 50%;
+    background-color: white;
+}
+
+#contact-section-title{
+    margin-left: 8.5%;
+}
+
+#contact-information-container{
+    margin-top: -2%;
+    display: flex;
+    font-size: 0.8em;
+}
+
+#social-media-container{
+    width: 40%;
+    margin-left: 7.8%;
+    margin-right: 16%;
+}
+#social-media-title-container{
+    display: flex;
+    margin-top: -5%;
+}
+
+#social-media-title-container > h4 > a{
+    color: #2274A5;
+    text-decoration: none;
 }

@@ -14,25 +14,17 @@ ctx.beginPath();
   ctx.moveTo(500, 50);
   ctx.arc(500, 50, 10, 0, Math.PI * 2, true);
   ctx.fill();
-  ctx.fillRect(560, 48, 2, 20);
-
-  ctx.fillStyle = '#008000'
-  ctx.fillRect(562, 53, 40, 15);
 
   ctx.fillStyle="#FF4422";
-  ctx.fillRect(600, 48, 2, 20);
 
   ctx.fillRect(800, 48, 2, 75);
 
+  ctx.fillRect(1055, 48, 2, 75);
+
   ctx.moveTo(900, 50);
   ctx.arc(900, 50, 10, 0, Math.PI * 2, true);
-  ctx.fillRect(1028, 48, 2, 20);
-
-  ctx.fillStyle = '#008000'
-  ctx.fillRect(1030, 53, 20, 15);
 
   ctx.fillStyle="#FF4422";
-  ctx.fillRect(1050, 48, 2, 20);
   ctx.fill();
 
   ctx.moveTo(1300, 50);
@@ -58,5 +50,66 @@ $(document).ready(function(){
     $('#bottom-section-img > img:eq(4)').css('display', 'none');
     $('#bottom-section-img > img:eq(5)').css('display', 'block');
   });
+
+
+  $('#img-1').click(function(){
+    $('#img-1').css('animation', 'fadeOut 1s linear');
+    $('#img-1').css('opacity', '0');
+    $('#img-1').css('display', 'none');
+
+    $('#text-container-1').css('display', 'block');
+    $('#text-container-1').css('animation', 'fadeIn 1s linear');
+    $('#text-container-1').css('opacity', '1');
+  })
+
+  $('.close-logo').click(function(){
+    $('#text-container-1').css('animation', 'fadeOut 1s linear');
+    $('#text-container-1').css('opacity', '0');
+    $('#text-container-1').css('display', 'none');
+
+    $('#img-1').css('display', 'block');
+    $('#img-1').css('animation', 'fadeIn 1s linear');
+    $('#img-1').css('opacity', '1');
+  })
+
+  $('#img-2').click(function(){
+    $('#img-2').css('animation', 'fadeOut 1s linear');
+    $('#img-2').css('opacity', '0');
+    $('#img-2').css('display', 'none');
+
+    $('#text-container-2').css('display', 'block');
+    $('#text-container-2').css('animation', 'fadeIn 1s linear');
+    $('#text-container-2').css('opacity', '1');
+  })
+
+  $('.close-logo').click(function(){
+    $('#text-container-2').css('animation', 'fadeOut 1s linear');
+    $('#text-container-2').css('opacity', '0');
+    $('#text-container-2').css('display', 'none');
+
+    $('#img-2').css('display', 'block');
+    $('#img-2').css('animation', 'fadeIn 1s linear');
+    $('#img-2').css('opacity', '1');
+  })
+
+  $('#img-3').click(function(){
+    $('#img-3').css('animation', 'fadeOut 1s linear');
+    $('#img-3').css('opacity', '0');
+    $('#img-3').css('display', 'none');
+
+    $('#text-container-3').css('display', 'block');
+    $('#text-container-3').css('animation', 'fadeIn 1s linear');
+    $('#text-container-3').css('opacity', '1');
+  })
+
+  $('.close-logo').click(function(){
+    $('#text-container-3').css('animation', 'fadeOut 1s linear');
+    $('#text-container-3').css('opacity', '0');
+    $('#text-container-3').css('display', 'none');
+
+    $('#img-3').css('display', 'block');
+    $('#img-3').css('animation', 'fadeIn 1s linear');
+    $('#img-3').css('opacity', '1');
+  })
 
 });

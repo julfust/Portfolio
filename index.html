@@ -12,10 +12,14 @@
     <div id="main-container">
         <!-- Section 1: Barre de navigation -->
         <nav>
+            <div id="perso1"></div>
             <a href="index.html">Accueil</a>
+
+            <div id="perso2"></div>
             <a href="projet.html">Projets</a>
+
+            <div id="perso3"></div>
             <a href="profil.html">Profil</a>
-            <a href="#">Contact</a>
             <a href="#" id="responsive-button-2">CV</a>
         </nav>
 
@@ -25,25 +29,26 @@
             <!-- Section 2: Affiche central + titre de la page d'acceuille -->
             <div id="middle-article-img-container"><!-- Conteneur de l'image de fond (inclus en css) -->
                 <div id="middle-article-text-container">
-                    <div id="profil-picture"></div><!-- Conteneur de la photo de profil (inclus en css) -->
+                    <p>Hello, i'm</p>
                     <h1>Julien Fustier</h1>
-                    <h3>Développeur Full-Stack</h3>
+                    <h2>Full-Stack developeur</h2>
                 </div>
             </div>
 
             <aside><!-- Section 3: Informations complémentaires: Ecole, contact, CV... -->
                 <!-- Information Contact -->
+                <div id="profil-picture"></div>
                 <div id="aside-text-container">
-                    <p>L'école multimédia</p>
-                    <p> 201 Rue Saint-Martin, 75003 Paris</p>
-
+                    <span class="test"></span>
+                    <h2>Julien Fustier</h2>
+                    <p>Email:</p>
                     <p>jfustier42@gmail.com</p>
                 </div>
 
                 <!-- Liens réseaux sociaux (logo font awesome) -->
                 <div id="social-media-logo-container">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/julien-fustier-990b6817a/"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    <a href="https://github.com/julfust?tab=repositories"><i class="fab fa-github fa-lg"></i></a>
                 </div>
 
                 <button><a href="#">Telecharger CV</a></button>
@@ -54,5 +59,7 @@
     </div>
     <script src="asset/lib/jquery-3.4.1.min.js"></script>
     <script src="asset/lib/all.min.js"></script><!-- Librairie permettant d'utiliser les logos font awesome-->
+    <script src="asset/lib/typed.js"></script>
+    <script src="asset/js/index.js"></script>
 </body>
 </html>

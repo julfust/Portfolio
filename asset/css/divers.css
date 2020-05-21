@@ -1,6 +1,6 @@
 /* Inclusion des polices et définition des animations */
 @font-face{
-    font-family: 'PT_Sans';
+    font-family: 'Gudea';
     src: url('../Police/PT_Sans/PTSans-Italic.ttf');
 }
 
@@ -113,7 +113,7 @@ nav{
 }
 
 nav a{
-    font-family: 'PT_Sans';
+    font-family: 'Gudea';
     font-size: 1.5em;
     color: white;
     text-decoration: none;
