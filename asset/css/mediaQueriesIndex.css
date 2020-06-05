@@ -1,0 +1,154 @@
+@media all and (max-width: 1150px){
+    aside > button{
+        width: 68%;
+    }
+
+    .title{
+        font-size: 2.5em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 1.7em;
+    }
+}
+
+@media all and (max-width: 1050px){
+    nav a{
+        font-size: 1.2em;
+    }
+
+    #profil-picture{
+        height: 85px;
+        width: 85px;
+    }
+
+    #aside-text-container > h2{
+        font-size: 1.5em;
+    }
+
+    #aside-text-container > p{
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 950px){
+    #responsive-button{
+        display: block;
+    }
+
+    aside > button{
+        display: none;
+    }
+    
+    .title{
+        font-size: 2em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 900px){
+    aside{
+        display: none;
+    }
+
+    #middle-article-img-container{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.5em;
+    }
+
+    #middle-article-text-container{
+        left: 22%;
+        top: 35%;
+    }
+
+    #middle-article-text-container > h3{
+        margin-top: -2%;
+        margin-bottom: 10%;
+        font-size: 1.5em;
+    }
+
+    #responsive-contact-section{
+        display: block;
+    }
+}
+
+@media all and (max-width: 750px){
+    .title{
+        font-size: 2em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 1.2em;
+    }
+
+    #email-container > p{
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 700px){
+    nav a{
+        font-size: 0.9em;
+    }
+}
+
+@media all and (max-width: 600px){
+    .title{
+        font-size: 1.5em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 0.9em;
+    }
+
+    #email-container > p{
+        font-size: 0.7em;
+    }
+
+    #logo-1, #logo-2{
+        display: none;
+    }
+
+    #logo-3, #logo-4{
+        display: block;
+    }
+}
+
+@media all and (max-width: 450px){
+    nav a{
+        font-size: 0.7em;
+    }
+
+    #middle-article-text-container{
+        width: 61%;
+        left: 20%;
+    }
+
+    .title{
+        font-size: 1.2em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 0.7em;
+    }
+
+    #email-container > p{
+        font-size: 0.6em;
+    }
+}
+
+@media all and (max-width: 400px){
+    .title{
+        font-size: 1em;
+    }
+
+    #middle-article-text-container > h3{
+        font-size: 0.7em;
+    }
+}

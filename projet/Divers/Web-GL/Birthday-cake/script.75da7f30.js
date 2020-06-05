@@ -36097,9 +36097,9 @@ exports.MapControls = MapControls;
 MapControls.prototype = Object.create(_threeModule.EventDispatcher.prototype);
 MapControls.prototype.constructor = MapControls;
 },{"../../../build/three.module.js":"node_modules/three/build/three.module.js"}],"assets/images/gateau.jpg":[function(require,module,exports) {
-module.exports = "/gateau.a98fe9de.jpg";
+module.exports = "./gateau.a98fe9de.jpg";
 },{}],"assets/images/particles/9.png":[function(require,module,exports) {
-module.exports = "/9.bf9e0527.png";
+module.exports = "./9.bf9e0527.png";
 },{}],"script.js":[function(require,module,exports) {
 "use strict";
 

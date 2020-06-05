@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site CV</title>
-    <link rel="stylesheet" href="asset/CSS/index.css">
-    <link rel="stylesheet" href="asset/CSS/mediaQueries.css">
+    <title>Julien Fustier - Portfolio</title>
+    <meta name="description" content="Développeur Full Stack, étudiant à l'Ecole Multimedia (Paris-Chatelet)">
+
+    <meta itemprop="name" content="Julien Fustier - Développeur Full Stack">
+    <meta itemprop="description" content="Développeur Full Stack, étudiant à l'Ecole Multimedia (Paris-Chatelet)">
+    <meta itemprop="image" content="https://portfolio-julienf.000webhostapp.com/asset/img/Screenshot_11.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Julien Fustier - Développeur Full Stack">
+    <meta name="twitter:description" content="Développeur Full Stack, étudiant à l'Ecole Multimedia (Paris-Chatelet)">
+    <meta name="twitter:image" content="https://portfolio-julienf.000webhostapp.com/asset/img/Screenshot_11.png">
+
+    <meta property="og:site_name" content="Julien Fustier - Développeur Full Stack">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-julienf.000webhostapp.com/">
+    <meta property="og:title" content="Julien Fustier - Développeur Full Stack">
+    <meta property="og:description" content="Développeur Full Stack, étudiant à l'Ecole Multimedia (Paris-Chatelet)">
+    <meta property="og:image" content="https://portfolio-julienf.000webhostapp.com/asset/img/Screenshot_11.png">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="shortcut icon" href="asset/img/favicon.ico" >
+    <link rel="icon" type="image/gif" href="asset/img/animated_favicon1.gif" >
+    <link rel="stylesheet" href="asset/css/index.css">
+    <link rel="stylesheet" href="asset/css/mediaQueriesIndex.css">
 </head>
 <body>
     <div id="main-container">
         <!-- Section 1: Barre de navigation -->
         <nav>
             <div id="perso1"></div>
-            <a href="index.html">Accueil</a>
+            <a href="index.html" id="link-1">Accueil</a>
 
             <div id="perso2"></div>
-            <a href="projet.html">Projets</a>
+            <a href="profil.html" id="link-2">Profil</a>
 
             <div id="perso3"></div>
-            <a href="profil.html">Profil</a>
-            <a href="#" id="responsive-button-2">CV</a>
+            <a href="projet.html" id="link-3">Projets</a>
+            <a href="asset/cv/CV.pdf" id="responsive-button">CV</a>
         </nav>
 
         <!-- Conteneur : affiche centrale + aside (display flex) -->
@@ -29,9 +51,23 @@
             <!-- Section 2: Affiche central + titre de la page d'acceuille -->
             <div id="middle-article-img-container"><!-- Conteneur de l'image de fond (inclus en css) -->
                 <div id="middle-article-text-container">
-                    <p>Hello, i'm</p>
-                    <h1>Julien Fustier</h1>
-                    <h2>Full-Stack developeur</h2>
+                    <h1><span class="title"></span></h1>
+                    <h3>Développeur Full Stack</h3>
+
+                    <div id="responsive-contact-section">
+                        <div id="email-container">
+                            <p>Email:</p>
+                            <p>jfustier42@gmail.com</p>
+                        </div>
+
+                        <div id="responsive-social-media-logo-container">
+                            <a href="https://www.linkedin.com/in/julien-fustier-990b6817a/" id="logo-1"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                            <a href="https://github.com/julfust?tab=repositories" id="logo-2"><i class="fab fa-github fa-lg"></i></a>
+
+                            <a href="https://www.linkedin.com/in/julien-fustier-990b6817a/" id="logo-3"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/julfust?tab=repositories" id="logo-4"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -39,7 +75,6 @@
                 <!-- Information Contact -->
                 <div id="profil-picture"></div>
                 <div id="aside-text-container">
-                    <span class="test"></span>
                     <h2>Julien Fustier</h2>
                     <p>Email:</p>
                     <p>jfustier42@gmail.com</p>
@@ -51,7 +86,7 @@
                     <a href="https://github.com/julfust?tab=repositories"><i class="fab fa-github fa-lg"></i></a>
                 </div>
 
-                <button><a href="#">Telecharger CV</a></button>
+                <button><a href="asset/cv/CV.pdf">Telecharger CV</a></button>
             </aside>
 
         </section>

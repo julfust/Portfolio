@@ -1,12 +1,18 @@
 /* Inclusion des polices et définition des animations */
-@font-face{
+@font-face {
     font-family: 'Gudea';
-    src: url('../Police/PT_Sans/PTSans-Italic.ttf');
+    src: url('../Police/Gudea/subset-Gudea.woff2') format('woff2'),
+        url('../Police/Gudea/subset-Gudea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url('../Police/Roboto/Roboto-Regular.ttf');
+    src: url('../Police/Roboto/subset-Roboto-Regular.woff2') format('woff2'),
+        url('../Police/Roboto/subset-Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @keyframes slidein{
@@ -15,7 +21,7 @@
     }
   
     to {
-      margin-left: 0%;
+      margin-left: 15%;
     }
 }
 
@@ -95,6 +101,15 @@
     }
 }
 
+@keyframes horizontalMove{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1200px;
+    }
+}
+
 /* Modification du style des différents éléments */
 body{
     margin: 0;
@@ -120,52 +135,94 @@ nav a{
     text-shadow: 4px 4px 4px black;
 
     width: 10%;
-    margin-right: 5%;
+    margin-right: 10%;
     margin-bottom: 0%;
     overflow: hidden; /*Utilisé pour éviter les bugs d'éffichages dut à l'animation */
 }
 
 nav a:hover{
     font-size: 1.7em;
-    color: #C41E3D;
 }
 
 /* Modification de largeur des liens afin d'éviter des bugs d'affichage des ombres */ 
-nav a:nth-child(1){
+#link-1{
+    margin-left: 15%;
     animation: slidein 3s;
 }
 
-nav a:nth-child(3){
+#linl-3{
     width: 14%;
+}
+
+#perso1{
+    display: none;
+
+    position: absolute;
+    left: 23%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
+}
+
+#perso2{
+    display: none;
+
+    position: absolute;
+    left: 43%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
+}
+
+#perso3{
+    display: none;
+
+    position: absolute;
+    left: 63%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
 }
 
 /* Caroussel */
 #carousel{
-    margin-bottom: 5%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
-#canvas-carousel{
-    width: 10%;
-    height: 10px;
-
-    margin-left: 11%;
-    margin-bottom: 2%;
-}
 /* Slideshow container */
 #carousel-slideshow-container {
-    max-width: 850px;
+    width: 80%;
+    height: 500px;
 
     position: relative;
     margin: auto;
     margin-top: 5%;
+
+    border: 1px solid black;
 }
   
 /* Hide the images by default */
 .mySlides {
     display: none;
 
+    width: 100%;
     height: 500px;
-    border: 1px solid black;
 
     position: relative;
 }
@@ -173,9 +230,10 @@ nav a:nth-child(3){
 .item-title{
     position: absolute;
     top: -18%;
-    right: 44%;
+    right: 42%;
 
     font-size: 2.3em;
+    color: #2274a5;
 }
 
 #item-1{
@@ -184,15 +242,6 @@ nav a:nth-child(3){
     background-image: url("../img/Webp.net-resizeimage\ \(6\).png");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-#item-2{
-    height: 500px;
-
-    background-image: url("../img/React-logo.gif");
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
 }
 
 #item-3{
@@ -204,13 +253,14 @@ nav a:nth-child(3){
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next{
     cursor: pointer;
 
     position: absolute;
     top: 50%;
 
-    width: auto;
+    width: 2%;
+    height: 27px;
     margin-top: -22px;
     padding: 16px;
 
@@ -225,13 +275,13 @@ nav a:nth-child(3){
     background-color: orange;
 }
 /* Position the "next button" to the right */
-.next {
+.next{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* Caption text */
-.text {
+.text{
     color: #f2f2f2;
     font-size: 15px;
 
@@ -245,7 +295,7 @@ nav a:nth-child(3){
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot{
     cursor: pointer;
 
     width: 15%;
@@ -256,12 +306,12 @@ nav a:nth-child(3){
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active, .dot:hover{
     background-color: #717171;
 }
 
 /* Fading animation */
-.fade {
+.fade{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -278,14 +328,24 @@ nav a:nth-child(3){
     text-align: center;
 }
 
-#project-carousel-selector{
-    width: 79%;
+#description-1{
+    animation: fadeIn 1s linear;
+}
 
-    margin-top: 2%;
-    margin-left: 10%;
+#description-1, #description-3{
+    font-size: 1.2em;
+}
+
+#project-carousel-selector{
+    width: 100%;
+    height: 160px;
+
+    margin-bottom: 5%;
 
     display: flex;
-    overflow:hidden;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
 }
 
 .carousel-selector-item-container{
@@ -293,60 +353,108 @@ nav a:nth-child(3){
 }
 
 .carousel-selector-item{
-    width: 242px;
-    height: 150px;
+    width: 195px;
+    height: 125px;
 
     margin-right: 30px;
 }
 
+.carousel-selector-item2{
+    width: 295px;
+    height: 125px;
+
+    margin-right: 30px;
+}
+
+.carousel-selector-item:hover, .carousel-selector-item2:hover{
+    transform: translateY(-30px);
+    transition-duration: 1s;
+}
+
 #project-1{
-    background-image: url("../img/Screenshot_12.png");
+    background-image: url("../img/city.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
 }
 
 #project-2{
-    background-image: url("../img/Screenshot_13.png");
+    background-image: url("../img/galaxy.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
 }
 
 #project-3{
-    background-image: url("../img/Screenshot_14.png");
+    background-image: url("../img/planete.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
 }
 
 #project-4{
-    background-image: url("../img/Screenshot_15.png");
+    background-image: url("../img/cake.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
 }
 
-#container-3 > div{
-    width: 295px;
+#container-3{
+    display: none;
 }
 
 #project-9{
-    margin-left: 13%;
-
-    background-image: url("../img/Webp.net-resizeimage\ \(9\).png");
+    background-image: url("../img/authentification.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #project-10{
-    background-image: url("../img/Webp.net-resizeimage\ \(7\).png");
+    background-image: url("../img/realtime-database.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #project-11{
-    background-image: url("../img/Webp.net-resizeimage\ \(8\).png");
+    background-image: url("../img/storage.jpg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#contact-section{
+    padding-top: 2%;
+    background-color: rgba(34, 116, 165, 0.7);
+}
+
+#contact-section h3, #contact-section h4{
+    margin-left: 10%;
+
+    font-family: 'Roboto';
+    font-size: 1.8em;
+    color: #FFFFFF;
+}
+
+#contact-section-title{
+    margin-left: 8.5%;
+}
+
+#contact-information-container{
+    margin-top: -2%;
+    display: flex;
+    font-size: 0.8em;
+}
+
+#social-media-container{
+    width: 40%;
+    margin-left: 7.8%;
+    margin-right: 16%;
+}
+#social-media-title-container{
+    display: flex;
+    margin-top: -5%;
+}
+
+#social-media-title-container > h4 > a{
+    color: #FFFFFF;
+    text-decoration: none;
 }

@@ -36097,17 +36097,17 @@ exports.MapControls = MapControls;
 MapControls.prototype = Object.create(_threeModule.EventDispatcher.prototype);
 MapControls.prototype.constructor = MapControls;
 },{"../../../build/three.module.js":"node_modules/three/build/three.module.js"}],"assets/images/textures/planet/globe/diffuse.jpg":[function(require,module,exports) {
-module.exports = "/diffuse.fe006eba.jpg";
+module.exports = "./diffuse.fe006eba.jpg";
 },{}],"assets/images/textures/planet/globe/metalness.jpg":[function(require,module,exports) {
-module.exports = "/metalness.f2389bff.jpg";
+module.exports = "./metalness.f2389bff.jpg";
 },{}],"assets/images/textures/planet/globe/normal.jpg":[function(require,module,exports) {
-module.exports = "/normal.b1562dc7.jpg";
+module.exports = "./normal.b1562dc7.jpg";
 },{}],"assets/images/textures/planet/globe/roughness.jpg":[function(require,module,exports) {
-module.exports = "/roughness.dd3d5245.jpg";
+module.exports = "./roughness.dd3d5245.jpg";
 },{}],"assets/images/textures/planet/clouds/alpha.jpg":[function(require,module,exports) {
-module.exports = "/alpha.d8c5f663.jpg";
+module.exports = "./alpha.d8c5f663.jpg";
 },{}],"assets/images/textures/planet/rock/diffuse-alpha.png":[function(require,module,exports) {
-module.exports = "/diffuse-alpha.ecf6bbea.png";
+module.exports = "./diffuse-alpha.ecf6bbea.png";
 },{}],"script.js":[function(require,module,exports) {
 "use strict";
 

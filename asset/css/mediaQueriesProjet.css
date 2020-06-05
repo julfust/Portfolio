@@ -1,0 +1,166 @@
+@media all and (max-width: 1095px){
+    nav a{
+        font-size: 1.2em;
+    }
+
+    h3, h4{
+        font-size: 1.4em;
+    }
+
+    #title-container{
+        font-size: 0.7em;
+    }
+
+    .item-container + p{
+        margin-left: -8%;
+        width: 115%;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 950px)
+{
+    .work-container{
+        margin-bottom: 30%;
+    }
+
+    .work-item-number{
+        height: 35px;
+        font-size: 1.2em;
+    }
+
+    h3, h4{
+        font-size: 1.2em;
+    }
+
+    #item-title-1{
+        left: 18%;
+        top: -25%;
+    }
+
+    #item-title-2{
+        left: 32%;
+        top: -25%;
+    }
+
+    #item-title-3{
+        left: 16%;
+        top: -25%;
+    }
+
+    #item-title-4{
+        left: 23%;
+        top: -25%;
+    }
+
+    #item-title-5 {
+        left: 22%;
+        top: -25%;
+    }
+}
+
+@media all and (max-width: 766px){
+    nav a{
+        font-size: 0.9em;
+    }
+
+    .work-item-number{
+        height: 28px;
+
+        top: -22px;
+        left: 10px;
+
+        font-size: 1em;
+    }
+
+    h3, h4{
+        font-size: 1em;
+    }
+
+    #title-container{
+        font-size: 0.5em;
+    }
+
+    .item-container + p{
+        font-size: 0.8em;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 650px){
+
+    .work-container{
+        margin-bottom: 40%;
+    }
+
+    h3, h4{
+        font-size: 0.8em;
+    }
+
+    #item-title-1, #item-title-2, #item-title-3, #item-title-4, #item-title-5{
+        top: -18%;
+    }
+
+    .item-container + p{
+        margin-left: -17%;
+        width: 130%;
+    }
+}
+
+@media all and (max-width: 550px){
+    #title-container{
+        font-size: 0.3em;
+    }
+
+    .work-item-number{
+        left: -2%;
+    }
+
+    #item-title-1{
+        left: 13%;
+    }
+
+    #item-title-2{
+        left: 30%;
+    }
+
+    #item-title-3{
+        left: 11%;
+    }
+
+    #item-title-4{
+        left: 16%;
+    }
+
+    #item-title-5{
+        left: 15%;
+    }
+
+    .last-item{
+        margin-bottom: 32%;
+    }
+}
+
+@media all and (max-width: 450px){
+    nav a{
+        font-size: 0.7em;
+    }
+
+    h3, h4{
+        font-size: 0.6em;
+    }
+
+    .work-container {
+        margin-bottom: 55%;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 1em;
+    }
+}

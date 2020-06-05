@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site CV</title>
+    <title>Julien Fustier - Portfolio</title>
+
+    <link rel="shortcut icon" href="../../asset/img/favicon.ico" >
+    <link rel="icon" type="image/gif" href="../../asset/img/animated_favicon1.gif" >
     <link rel="stylesheet" href="../../asset/css/divers.css">
+    <link rel="stylesheet" href="../../asset/css/mediaQueriesDivers.css">
 </head>
 <body>
     <div id="main-container">
         <nav>
-            <a href="../../index.html">Accueil</a>
-            <a href="../../projet.html">Projet</a>
-            <a href="../../profil.html">Profil</a>
+            <div id="perso1"></div>
+            <a href="../../index.html" id="link-1">Accueil</a>
+
+            <div id="perso2"></div>
+            <a href="../../profil.html" id="link-2">Profil</a>
+
+            <div id="perso3"></div>
+            <a href="../../projet.html" id="link-3">Projet</a>
         </nav>
     </div>
 
     <div id="middle-container">
         <section id="carousel">
-            <canvas class="canvas" id="canvas-carousel">
-                Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
-            </canvas>
             <div id="carousel-slideshow-container">
                 <div class="mySlides fade">
                     <h2 class="item-title">Web GL</h2>
                     <div id="item-1"></div>
-                </div>
-                
-                <div class="mySlides fade">
-                    <h2 class="item-title">React</h2>
-                    <div id="item-2"></div>
                 </div>
                 
                 <div class="mySlides fade">
@@ -46,10 +47,6 @@
                 sein de nos pages et ainsi d'approfondir nos compétences en développement front-end en 
                 réalisant des projets plus complexes comme par exemple des jeux vidéo.</p>
 
-                <p id="description-2" style="display: none;">L'utilisation de React m'a permis de me confronter pour la premiere 
-                fois à l'utilisation des outils de développement coter client (type: angular, vue.js) et la 
-                logique du modele MVC utile pour facilité le développement front d'application web monopage.</p>
-
                 <p id="description-3" style="display: none;">Apprendre Firebase m'a permis de découvrir la programmation coter 
                 serveur avec l'utilisation des bases de données. J'ai ainsi put découvrir entre autre le stockage 
                 et l'affichage des données sur un site depuis une database.</p>
@@ -63,17 +60,28 @@
                     <div class="carousel-selector-item" id="project-4"></div>
                 </div>
 
-                <div class="carousel-selector-item-container" id="container-2">
-                    <div class="carousel-selector-item" id="project-5"></div>
-                    <div class="carousel-selector-item" id="project-6"></div>
-                    <div class="carousel-selector-item" id="project-7"></div>
-                    <div class="carousel-selector-item" id="project-8"></div>
-                </div>
-
                 <div class="carousel-selector-item-container" id="container-3">
-                    <div class="carousel-selector-item" id="project-9"></div>
-                    <div class="carousel-selector-item" id="project-10"></div>
-                    <div class="carousel-selector-item" id="project-11"></div>
+                    <div class="carousel-selector-item2" id="project-9"></div>
+                    <div class="carousel-selector-item2" id="project-10"></div>
+                    <div class="carousel-selector-item2" id="project-11"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <h3 id="contact-section-title">📞 Me contacter</h3>
+            <div id="contact-information-container">
+                <div id="social-media-container">
+                    <h4>🌍 Réseaux sociaux :</h4>
+                    <div id="social-media-title-container">
+                        <h4><a href="https://www.linkedin.com/in/julien-fustier-990b6817a/"><i class="fab fa-linkedin-in"></i> Linkedin</a></h4>
+                        <h4><a href="https://github.com/julfust?tab=repositories"><i class="fab fa-github"></i> Github</a></h4>
+                    </div>
+                </div>
+    
+                <div id="email-container">
+                    <h4>📧 Adresse mail :</h4>
+                    <h4>jfustier42@gmail.com</h4>
                 </div>
             </div>
         </section>

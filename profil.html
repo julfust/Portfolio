@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site CV</title>
+    <title>Julien Fustier - Portfolio</title>
+
+    <link rel="shortcut icon" href="asset/img/favicon.ico" >
+    <link rel="icon" type="image/gif" href="asset/img/animated_favicon1.gif" >
     <link rel="stylesheet" href="asset/css/profil.css">
+    <link rel="stylesheet" href="asset/css/mediaQueriesProfil.css">
 </head>
 <body>
 
     <div id="main-container">
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="projet.html">Projets</a>
-            <a href="profil.html">Profil</a>
-            <a href="#" id="responsive-button-2">CV</a>
+            <div id="perso3"></div>
+            <a href="index.html" id="link-1">Accueil</a>
+
+            <div id="perso4"></div>
+            <a href="profil.html" id="link-2">Profil</a>
+
+            <div id="perso5"></div>
+            <a href="projet.html" id="link-3">Projets</a>
         </nav>
 
         <section id="top-section">
@@ -37,7 +45,7 @@
 
         </section>
 
-        <section id="middle-section">
+        <section id="middle-section" class="reveal">
             <h3>👨‍🎓 Mon Parcours</h3>
             <div id="arrow-container" style="display: none;">
                 <div><i class="fas fa-caret-left"></i></div>
@@ -72,16 +80,18 @@
                 <div class="history-item">
                     <h4>8 Avril-20 Avril 2019</h4>
                     <h4>Stage 1ère année</h4>
-                    <p>Stage de fin de première année d'études, réalisé au sein de la collectivité de mon département. Ce stage m’a permis d’en apprendre d’avantages sur le métier d’informaticien et surtout de me construire un réseau de relation.</p>
+                    <p>Stage de fin de première année d'études, réalisé au sein de la collectivité de mon département. Ce stage m’a permis d’en apprendre d’avantages sur le métier de développeur web et surtout de me construire un réseau de relation.</p>
                 </div>
             </div>
         </section>
 
-        <section id="bottom-section">
+        <section id="bottom-section" class="reveal">
             <h3>❤️ Mes passions</h3>
             <div id="bottom-section-img-container">
                 <div class="bottom-section-img">
-                    <img id="img-1" src="asset/img/Webp.net-resizeimage (10).png" alt="logo musique">
+                    <img id="img-1" class="lazy-load" src="asset/img/Webp.net-resizeimage (10).png" alt="logo musique">
+                    <img id="responsive-img-1" class="lazy-load" src="asset/img/Webp.net-resizeimage (13).png" alt="logo musique">                    
+                    <img id="responsive2-img-1" class="lazy-load" src="asset/img/Webp.net-resizeimage (16).png" alt="logo musique">                    
                     <div id="text-container-1">
                         <div class="close-logo"><i class="far fa-times-circle fa-2x"></i></div>
                         <p>Batteur amateur depuis 6 ans en conservatoire, je joue avec différents groupes et je participe à plusieurs projets (concerts, auditions, enregistrements)</p>
@@ -90,29 +100,33 @@
                 </div>
 
                 <div class="bottom-section-img">
-                    <img id="img-2" src="asset/img/Webp.net-resizeimage.png" alt="logo jeux vidéo">
+                    <img id="img-2" class="lazy-load" src="asset/img/Webp.net-resizeimage.png" alt="logo jeux vidéo">
+                    <img id="responsive-img-2" class="lazy-load" src="asset/img/Webp.net-resizeimage (14).png" alt="logo jeux vidéo">
+                    <img id="responsive2-img-2" class="lazy-load" src="asset/img/Webp.net-resizeimage (17).png" alt="logo jeux vidéo">
                     <div id="text-container-2">
                         <div class="close-logo"><i class="far fa-times-circle fa-2x"></i></div>
-                        <p>Grand amateur de jeux vidéo, je joue surtout sur console (ps4). j'aprécie des genres très variés, aussi bien des jeux en ligne (FPS, jeux de combat, jeux de survie...) que des jeux solos (RPG, plateforme...). Mes jeux références du moment sont Batefield 5, Final Fantsy 7 et Don't Starve Together.</p>
+                        <p>Grand amateur de jeux vidéo, je joue surtout sur console (ps4). j'aprécie des genres très variés: FPS, jeux de survie, RPG... Mes jeux références du moment sont Batefield 5, Final Fantsy 7 et Don't Starve Together.</p>
                     </div>
                     <h4>Jeux video</h4>
                 </div>
 
                 <div class="bottom-section-img">
-                    <img id="img-3" src="asset/img/Webp.net-resizeimage (1).png" alt="logo informatique">
+                    <img id="img-3" class="lazy-load" src="asset/img/Webp.net-resizeimage (1).png" alt="logo informatique">
+                    <img id="responsive-img-3" class="lazy-load" src="asset/img/Webp.net-resizeimage (15).png" alt="logo informatique">
+                    <img id="responsive2-img-3" class="lazy-load" src="asset/img/Webp.net-resizeimage (18).png" alt="logo informatique">
                     <div id="text-container-3">
                         <div class="close-logo"><i class="far fa-times-circle fa-2x"></i></div>
-                        <p>Passionnée par l'informatique et plus particulièrement par la programmation je réalise souvent de petits travaux personnels en suivant les cours disponibles en libre accèes sur internet par exemple sur openclassroom. Cela m'a permit de découvrir différents langages dont le PHP/SQL et le C.</p>
+                        <p>Passionné par la programmation je réalise souvent de petits travaux personnels en suivant les cours disponibles en libre accèes sur internet. Cela m'a permit de découvrir différents langages dont le PHP/SQL et le C.</p>
                     </div>
                     <h4>Informatique</h4>
                 </div>
         </section>
 
-        <section id="contact-section">
+        <section id="contact-section" class="reveal">
             <h3 id="contact-section-title">📞 Me contacter</h3>
             <div id="contact-information-container">
                 <div id="social-media-container">
-                    <h4>🌍 Réseau sociaux:</h4>
+                    <h4>🌍 Réseaux sociaux :</h4>
                     <div id="social-media-title-container">
                         <h4><a href="https://www.linkedin.com/in/julien-fustier-990b6817a/"><i class="fab fa-linkedin-in"></i> Linkedin</a></h4>
                         <h4><a href="https://github.com/julfust?tab=repositories"><i class="fab fa-github"></i> Github</a></h4>
@@ -120,7 +134,7 @@
                 </div>
     
                 <div id="email-container">
-                    <h4>📧 Adresse mail:</h4>
+                    <h4>📧 Adresse mail :</h4>
                     <h4>jfustier42@gmail.com</h4>
                 </div>
             </div>

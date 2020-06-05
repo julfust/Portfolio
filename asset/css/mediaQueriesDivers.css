@@ -1,0 +1,210 @@
+@media all and (max-width: 1050px){
+    nav a{
+        font-size: 1.2em;
+    }
+
+    .item-title{
+        top: -16%;
+        right: 43%;
+        font-size: 1.8em;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 1000px){
+    #carousel-slideshow-container{
+        width: 70%;
+        height: 390px;
+    }
+
+    #item-1, #item-3{
+        height: 390px;
+    }
+
+    #item-1{
+        background-image: url(../img/Webp.net-resizeimage\ \(6\)-min.png);
+    }
+
+    #item-3{
+        background-image: url(../img/firebase-logo-min.gif);
+    }
+
+    #description-1, #description-3{
+        font-size: 0.8em;
+    }
+
+    #project-carousel-selector{
+        height: 120px;
+    }
+
+    .carousel-selector-item {
+        width: 150px;
+        height: 100px;
+        margin-right: 40px;
+    }
+
+    .carousel-selector-item2{
+        width: 172px;
+        height: 80px;
+    }
+
+    #project-9{
+        margin-left: 2%;
+        background-image: url(../img/authentification-min.jpg);
+    }
+
+    #project-10{
+        background-image: url(../img/realtime-database-min.jpg);
+    }
+
+    #project-11{
+        background-image: url(../img/storage-min.jpg);
+    }
+}
+
+@media all and (max-width: 800px){
+    .item-title{
+        top: -14%;
+        right: 41%;
+        font-size: 1.5em;
+    }
+
+    #carousel-slideshow-container{
+        height: 300px;
+    }
+
+    #item-1, #item-3{
+        height: 290px;
+    }
+
+    .prev, .next{
+        width: 0%;
+        height: 16px;
+        font-size: 12px;
+    }
+
+    #project-carousel-selector{
+        height: 90px;
+    }
+
+    .carousel-selector-item{
+        width: 115px;
+        height: 70px;
+    }
+
+    .carousel-selector-item2{
+        width: 110px;
+        height: 50px;
+    }
+
+    #project-9{
+        background-image: url(../img/authentification-min2.jpg);
+    }
+
+    #project-10{
+        background-image: url(../img/realtime-database-min2.jpg);
+    }
+
+    #project-11{
+        background-image: url(../img/storage-min2.jpg);
+    }
+}
+
+@media all and (max-width: 700px){
+    nav a{
+        font-size: 0.9em;
+    }
+
+    .item-title{
+        top: -11%;
+        right: 39%;
+        font-size: 1.4em;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 650px){
+    #project-carousel-selector{
+        height: 45px;
+    }
+
+    .carousel-selector-item-container > .carousel-selector-item:nth-child(1){
+        margin-left: 3%;
+    }
+
+    .carousel-selector-item{
+        width: 70px;
+        height: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media all and (max-width: 600px){
+    #carousel-slideshow-container{
+        width: 60%;
+        height: 200px;
+    }
+
+    #item-1{
+        height: 200px;
+        background-image: url(../img/Webp.net-resizeimage\ \(6\)-min2.png);
+    }
+
+    #item-3{
+        height: 200px;
+        background-image: url(../img/firebase-logo-min2.gif);
+    }
+
+    #description-1, #description-3{
+        font-size: 0.6em;
+    }
+
+    .prev, .next{
+        top: 52%;
+        height: 12px;
+        padding: 10px;
+        font-size: 8px;
+    }
+}
+
+@media all and (max-width: 450px){
+    nav a{
+        font-size: 0.7em;
+    }
+
+    .item-title{
+        top: -10%;
+        right: 38%;
+        font-size: 1.1em;
+    }
+
+    #contact-section h3, #contact-section h4{
+        font-size: 0.8em;
+    }
+
+    #carousel-slideshow-container{
+        height: 165px;
+    }
+
+    #item-1, #item-3{
+        height: 165px;
+    }
+
+    .prev, .next{
+        top: 55%;
+        height: 8px;
+        padding: 6px;
+        font-size: 6px;
+    }
+
+    #description-carousel-selector{
+        width: 65%;
+        margin-left: 17%;
+    }
+}

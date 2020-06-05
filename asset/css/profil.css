@@ -1,24 +1,35 @@
 /* Inclusion des polices et définition des animations */
-@font-face{
+@font-face {
     font-family: 'Gudea';
-    src: url('../Police/Gudea/Gudea-Regular.ttf');
+    src: url('../Police/Gudea/subset-Gudea.woff2') format('woff2'),
+        url('../Police/Gudea/subset-Gudea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url('../Police/Roboto/Roboto-Regular.ttf');
+    src: url('../Police/Roboto/subset-Roboto-Regular.woff2') format('woff2'),
+        url('../Police/Roboto/subset-Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'pixelmix';
-    src: url('../Police/pixelmix/pixelmix.ttf')
+    src: url('../Police/pixelmix/subset-pixelmix.woff2') format('woff2'),
+        url('../Police/pixelmix/subset-pixelmix.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-@font-face{
-    font-family: 'PT_Sans';
-    src: url('../Police/PT_Sans/PTSans-Italic.ttf');
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../Police/PT_Sans/subset-PTSans-BoldItalic.woff2') format('woff2'),
+        url('../Police/PT_Sans/subset-PTSans-BoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
 }
-
 
 @keyframes slidein1{
     from {
@@ -26,7 +37,7 @@
     }
   
     to {
-      margin-left: 0%;
+      margin-left: 15%;
     }
 }
 
@@ -95,27 +106,97 @@ nav a{
     text-shadow: 4px 4px 4px black;
 
     width: 10%;
-    margin-right: 5%;
-    margin-bottom: 0%;
+    margin-right: 10%;
     overflow: hidden; /*Utilisé pour éviter les bugs d'éffichages dut à l'animation */
 }
 
 nav a:hover{
     font-size: 1.7em;
-    color: #C41E3D;
 }
 
 /* Modification de largeur des liens afin d'éviter des bugs d'affichage des ombres */ 
-nav a:nth-child(1){
+#link-1{
+    margin-left: 15%;
     animation: slidein1 3s;
 }
 
-nav a:nth-child(3){
+#link-3{
     width: 14%;
+}
+
+#perso3{
+    display: none;
+
+    position: absolute;
+    left: 21%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
+}
+
+#perso4{
+    display: none;
+
+    position: absolute;
+    left: 41%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
+}
+
+#perso5{
+    display: none;
+
+    position: absolute;
+    left: 61%;
+
+    width: 60px;
+    height: 70px;
+
+    background: url(../img/Webp.net-resizeimage\ \(11\).png);
+    background-position: 0 -975px;
+
+    animation: horizontalMove 1s steps(10) infinite;
 }
 
 #responsive-button-2{
     display: none;
+}
+
+.lazy-load
+{
+    opacity: 0;
+    transition: opacity 0.5s;
+    will-change: opacity;
+}
+
+.lazy-load.loaded
+{
+    opacity: 1;
+}
+
+.reveal
+{
+    transform: translateY(15vh);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0, 0, 0, 1), opacity 1s;
+    will-change: tranform, opacity;
+}
+
+.reveal.revealed
+{
+    transform: translateY(0vh);
+    opacity: 1;
 }
 
 /*Section profil */
@@ -131,7 +212,7 @@ nav a:nth-child(3){
 
 #competence-container{
     display: flex;
-    width: 34%;
+    width: 41%;
     margin-bottom: 2%;
     margin-left: 32%;
 
@@ -150,7 +231,7 @@ nav a:nth-child(3){
 }
 
 #competence-container > ul{
-    width: 65%;
+    width: 80%;
     margin-top: 0%;
     margin-bottom: 0%;
     padding-top: 7%;
@@ -189,7 +270,7 @@ h3, h4{
 .history-item > h4{
     margin-left: 10%;
 
-    font-family: 'PT_Sans';
+    font-family: 'PT Sans';
     font-size: 1.8em;
     color: #2274A5;
 }
@@ -249,7 +330,7 @@ h3, h4{
 
 #date-chronologie-container > h4{
     margin-bottom: -2%;
-    margin-right: 17%;
+    margin-right: 15.7%;
 
     font-family: 'Roboto';
     font-size: 1em;
@@ -260,25 +341,29 @@ h3, h4{
     margin-left: 6%;
 }
 
+#canvas{
+    width: 100%;
+}
+
 #history-item-container{
     display: flex;
     position: relative;
 }
 
 .history-item{
-    width: 17%;
+    width: 20%;
     text-align: center;
     font-size: 1em;
 }
 
 .history-item:nth-child(1){
     margin-top: -2%;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 .history-item:nth-child(2){
     margin-top: -2%;
-    margin-left: 23.5%;
+    margin-left: 15.5%;
 }
 
 .history-item:nth-child(3){
@@ -335,6 +420,30 @@ h3, h4{
 .bottom-section-img > img:hover{
     transform: translateY(-30px);
     transition-duration: 1s;
+}
+
+#responsive-img-1{
+    display: none;
+}
+
+#responsive-img-2{
+    display: none;
+}
+
+#responsive-img-3{
+    display: none;
+}
+
+#responsive2-img-1{
+    display: none;
+}
+
+#responsive2-img-2{
+    display: none;
+}
+
+#responsive2-img-3{
+    display: none;
 }
 
 .bottom-section-img > h4{

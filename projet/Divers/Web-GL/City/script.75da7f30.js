@@ -35626,13 +35626,13 @@ var FlyControls = function (object, domElement) {
 
 exports.FlyControls = FlyControls;
 },{"../../../build/three.module.js":"node_modules/three/build/three.module.js"}],"assets/images/road.png":[function(require,module,exports) {
-module.exports = "/road.f189ab64.png";
+module.exports = "./road.f189ab64.png";
 },{}],"assets/images/building.jpg":[function(require,module,exports) {
-module.exports = "/building.94bbefd1.jpg";
+module.exports = "./building.94bbefd1.jpg";
 },{}],"assets/images/floor.jpg":[function(require,module,exports) {
-module.exports = "/floor.db4a06fd.jpg";
+module.exports = "./floor.db4a06fd.jpg";
 },{}],"assets/images/particles/8.png":[function(require,module,exports) {
-module.exports = "/8.e42e4d41.png";
+module.exports = "./8.e42e4d41.png";
 },{}],"script.js":[function(require,module,exports) {
 "use strict";
 

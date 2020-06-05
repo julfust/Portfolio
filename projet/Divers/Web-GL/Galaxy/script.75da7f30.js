@@ -36097,7 +36097,7 @@ exports.MapControls = MapControls;
 MapControls.prototype = Object.create(_threeModule.EventDispatcher.prototype);
 MapControls.prototype.constructor = MapControls;
 },{"../../../build/three.module.js":"node_modules/three/build/three.module.js"}],"assets/images/particles/1.png":[function(require,module,exports) {
-module.exports = "/1.175691ee.png";
+module.exports = "./1.175691ee.png";
 },{}],"script.js":[function(require,module,exports) {
 "use strict";
 

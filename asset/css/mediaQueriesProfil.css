@@ -1,0 +1,225 @@
+@media all and (max-width: 1050px){
+    nav a{
+        font-size: 1.2em;
+    }
+
+    h3{
+        margin-left: 5%;
+        font-size: 1.4em;
+    }
+
+    #contact-section-title{
+        margin-left: 5.5%;
+    }
+
+    #competence-container{
+        margin-left: 34%;
+        width: 34%;
+    }
+
+    #competence-container > ul{
+        width: 72%;
+    }
+
+    #perso1{
+        /* margin-top: 25%; */
+        margin: 25% 2% 0 2%;
+
+        width: 80px;
+        height: 59px;
+
+        background-position: 0 -785px;
+        background-image: url(../img/Webp.net-resizeimage\ \(11\).png);
+    }
+
+    #perso2{
+        margin-left: 6%;
+
+        width: 60px;
+        height: 59px;
+
+        background-position: 0 -980px;
+        background-image: url(../img/Webp.net-resizeimage\ \(11\).png);
+    }
+
+    li{
+        font-size: 0.7em;
+    }
+
+    #date-chronologie-container > h4{
+        margin-right: 14.9%;
+    }
+
+    .history-item > h4{
+        font-size: 0.9em;
+    }
+
+    .history-item > p{
+        font-size: 0.7em;
+    }
+
+    #text-container-1, #text-container-2, #text-container-3{
+        font-size: 0.8em;
+    }
+}
+
+@media all and (max-width: 900px){
+    #competence-container{
+        width: 33%;
+    }
+
+    #perso1{
+        margin-top: 20%;
+    }
+
+    li{
+        font-size: 0.5em;
+    }
+
+    #date-chronologie-container > h4{
+        margin-right: 14.3%;
+    }
+    .history-item > p{
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px){
+    h3, h4{
+        margin-left: 2%;
+        font-size: 1.1em;
+    }
+
+    #contact-section-title{
+        margin-left: 2%;
+    }
+
+    #date-chronologie-container > h4{
+        margin-right: 21%;
+    }
+
+    #img-1{
+        display: none;
+    }
+
+    #img-2{
+        display: none;
+    }
+
+    #img-3{
+        display: none;
+    }
+
+    #responsive-img-1{
+        display: block;
+    }
+
+    #responsive-img-2{
+        display: block;
+    }
+
+    #responsive-img-3{
+        display: block;
+    }
+
+    #text-container-1, #text-container-2, #text-container-3{
+        font-size: 0.6em;
+    }
+
+    .bottom-section-img > h4{
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width: 700px){
+    h3, h4{
+        margin-left: 2%;
+        font-size: 0.9em;
+    }
+
+    nav a{
+        font-size: 0.9em;
+    }
+
+    #perso1{
+        display: none;
+    }
+
+    #competence-container{
+        width: 40%;
+        margin-left: 29%;
+    }
+
+    #competence-container > ul{
+        width: 84%;
+    }
+
+    li{
+        font-size: 0.6em;
+    }
+}
+
+@media all and (max-width: 600px){
+    #date-chronologie-container > h4{
+        margin-right: 20%;
+        font-size: 0.8em;
+    }
+
+    .history-item{
+        width: 25%;
+    }
+
+    .history-item > h4{
+        font-size: 0.8em;
+    }
+
+    .history-item:nth-child(2){
+        margin-left: 5.5%;
+    }
+}
+
+@media all and (max-width: 450px){
+    nav a{
+        font-size: 0.7em;
+    }
+
+    li{
+        font-size: 0.4em;
+    }
+
+    .bottom-section-img > h4{
+        font-size: 0.7em;
+    }
+
+    #date-chronologie-container > h4{
+        margin-right: 18%;
+    }
+
+    #responsive-img-1{
+        display: none;
+    }
+    
+    #responsive-img-2{
+        display: none;
+    }
+    
+    #responsive-img-3{
+        display: none;
+    }
+
+    #responsive2-img-1{
+        display: block;
+    }
+    
+    #responsive2-img-2{
+        display: block;
+    }
+    
+    #responsive2-img-3{
+        display: block;
+    }
+
+    #text-container-1, #text-container-2, #text-container-3{
+        font-size: 0.4em;
+    }
+}

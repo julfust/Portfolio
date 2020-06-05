@@ -1,0 +1,7 @@
+Ajouter robots.txt, sitemap.xml, title, open graph, etc.
+Redimensionner images et passer en jpg si nécessaire
+Améliorer responsive
+Optimiser fonts
+Ajouter overlay sur image landing
+Améliorer hover sur titres
+Réduire animation d'apparaition du menu

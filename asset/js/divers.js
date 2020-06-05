@@ -1,3 +1,16 @@
+//Animation Zelda
+if(screen.width > 900)
+{
+  $("#link-1").mouseenter(() => $("#perso1").css("display", "block"));
+  $("#link-1").mouseleave(() => $("#perso1").css("display", "none"));
+
+  $("#link-2").mouseenter(() => $("#perso2").css("display", "block"));
+  $("#link-2").mouseleave(() => $("#perso2").css("display", "none"));
+
+  $("#link-3").mouseenter(() => $("#perso3").css("display", "block"));
+  $("#link-3").mouseleave(() => $("#perso3").css("display", "none"));
+}
+
 //Carousel Matière
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -31,89 +44,33 @@ function showSlides(n) {
 //Carousel projet
 let margin = parseInt($("#container-1").css('margin-left'));
 $('.next').click(() => showNextProject());
+$('.prev').click(() => showNextProject());
 
 function showNextProject(){
-  if(margin == 0)
-  {
-    margin = -102.8;
-    $("#container-1").css('animation', `next1 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
+  let state = $('#container-1').css('display');
 
-    $("#description-1").css('display', 'none');
-    $("#description-2").css({'display' : 'block',
-    'animation' : 'fadeIn 1s linear'});
-    $("#description-3").css('display', 'none');
-    return;
+  if(state == 'flex')
+  {
+    $('#container-1').css('display', 'none');
+    $('#container-3').css({'display' : 'flex',
+                          'animation' : 'fadeIn 1s linear'});
+
+    $('#description-1').css('display', 'none');
+    $('#description-3').css({'display' : 'block',
+                            'animation' : 'fadeIn 1s linear'});
   }
 
-  if(margin == -102.8)
-  {
-    margin = -205.6;
-    $("#container-1").css('animation', `next2 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
+  else{
+    $('#container-3').css('display', 'none');
+    $('#container-1').css({'display' : 'flex',
+                          'animation' : 'fadeIn 1s linear'});
 
-    $("#description-1").css('display', 'none');
-    $("#description-2").css('display', 'none');
-    $("#description-3").css({'display' : 'block',
-    'animation' : 'fadeIn 1s linear'});
-    return;
-  }
-
-  if(margin == -205.6)
-  {
-    margin = 0;
-    $("#container-1").css('animation', `next3 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
-
-    $("#description-1").css({'display' : 'block',
-    'animation' : 'fadeIn 1s linear'});
-    $("#description-2").css('display', 'none');
-    $("#description-3").css('display', 'none');
+    $('#description-3').css('display', 'none');
+    $('#description-1').css({'display' : 'block',
+                            'animation' : 'fadeIn 1s linear'});
   }
 }
 
-
-$('.prev').click(() => showPrevProject());
-
-function showPrevProject(){
-  if(margin == -102.8)
-  {
-    margin = 0;
-    $("#container-1").css('animation', `prev1 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
-
-    $("#description-1").css({'display' : 'block',
-    'animation' : 'fadeIn 1s linear'});
-    $("#description-2").css('display', 'none');
-    $("#description-3").css('display', 'none');
-    return;
-  }
-
-  if(margin == -205.6)
-  {
-    margin = -102.8;
-    $("#container-1").css('animation', `prev2 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
-
-    $("#description-1").css('display', 'none');
-    $("#description-2").css({'display' : 'block',
-                              'animation' : 'fadeIn 1s linear'});
-    $("#description-3").css('display', 'none');
-    return;
-  }
-
-  if(margin == 0)
-  {
-    margin = -205.6;
-    $("#container-1").css('animation', `prev3 1s linear`);
-    $("#container-1").css('margin-left', `${margin}%`);
-
-    $("#description-1").css('display', 'none');
-    $("#description-2").css('display', 'none');
-    $("#description-3").css({'display' : 'block',
-    'animation' : 'fadeIn 1s linear'});
-  }
-}
 
 //Redirection vers les projets
 $('#project-1').click(() => self.location.href = "../../projet/Divers/Web-GL/City/index.html");
